@@ -1,0 +1,17 @@
+graph TD;
+    A[Identificación de la necesidad de contratación] --> B[Descripción del puesto];
+    B --> C[Publicación de la oferta de empleo];
+    C --> D[Recepción de solicitudes];
+    D --> E[Revisión de solicitudes];
+    E --> F{¿Cumplen con los requisitos mínimos?};
+    F -- Sí --> G[Entrevistas];
+    G --> H[Evaluación de los candidatos];
+    H --> I[Referencias y verificaciones];
+    I --> J{¿Candidato adecuado seleccionado?};
+    J -- Sí --> K[Oferta de empleo];
+    K --> L[Negociación y aceptación];
+    L --> M[Integración];
+    M --> N[Seguimiento y evaluación];
+    F -- No --> E;
+    J -- No --> E;
+    N --> E;
